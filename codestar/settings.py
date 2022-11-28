@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'blog',
 ]
 
@@ -55,7 +56,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-rachelodonn-ithinkthere-l97o092qk1w.ws-eu77.gitpod.io']
 
 ROOT_URLCONF = 'codestar.urls'
 
